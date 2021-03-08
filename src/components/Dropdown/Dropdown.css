@@ -1,0 +1,185 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    display: inline-block;
+    width: 330px;
+    height: 60px;
+    background: #9b9a9a;
+    margin-top: 35px;
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+    -webkit-animation: dropbtn 1.7s both;
+    animation: dropbtn 1.7s both;
+}
+
+.dropdown-content {
+    display: none;
+    margin: 7px;
+    background: #9b9a9a;
+    border-radius: 50px;
+    text-align: center;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: 4fr 4fr 4fr;
+    -webkit-animation: dropdown-content 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+    animation: dropdown-content 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.sound0,
+.sound1,
+.sound2,
+.sound3,
+.sound4,
+.sound5,
+.sound6,
+.sound7,
+.sound8,
+.sound9 {
+    background: #d0ac72;
+    border-radius: 50px;
+}
+
+.show {
+    display: grid;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 34px;
+    animation: switch 0.5s ease-out both;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    height: 25px;
+    width: 55px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 40%;
+    background-color: rgb(131, 131, 131);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.slider:before {
+    position: absolute;
+    font-family: "Akaya Telivigala";
+    content: "Off";
+    font-size: 10px;
+    height: 15px;
+    width: 20px;
+    left: 6px;
+    bottom: 6px;
+    background-color: rgb(255, 255, 255);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #5c9680;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 35px #3d607a;
+}
+
+input:checked+.slider:before {
+    content: "On";
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+*/
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 35px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+@keyframes dropbtn {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes dropdown-content {
+    0% {
+        -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+        transform: translateY(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
