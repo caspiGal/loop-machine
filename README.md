@@ -1,4 +1,4 @@
-## Looper-Machine App     :tw-25c0:  :tw-1f532:  :tw-25b6:
+## Looper-Machine App
 
 
 Click here to play  (Link-soon!)&copy;
