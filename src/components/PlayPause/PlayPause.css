@@ -2,13 +2,9 @@
 wobble-hor-bottom - Play \ Pause buttuns jumpping
 */
 
-.btn-wrapper {
-    text-align: center;
-}
-
 .wobble-hor-bottom {
     margin: 10px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .wobble-hor-bottom:hover {

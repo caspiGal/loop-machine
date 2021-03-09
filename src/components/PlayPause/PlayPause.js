@@ -13,16 +13,16 @@ const PlayPause = (props) => {
       <img
         className="wobble-hor-bottom"
         id="playbtn"
-        src={play}
+        src={ play }
         alt="playbtn"
-        onClick={onClick}
+        onClick={ onClick }
       />
       <img
         className="wobble-hor-bottom"
         id="pausebtn"
-        src={pause}
+        src={ pause }
         alt="pausebtn"
-        onClick={onClick}
+        onClick={ onClick }
       />
     </div>
   );

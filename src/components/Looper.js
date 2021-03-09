@@ -10,6 +10,7 @@ const Looper = () => {
   const [playing, setPlaying] = useState(false);
 
   function getIndex(value, arr, prop) {
+    // getIndex from obj
     for (let i = 0; i < arr.length; i++) {
       if (arr[i][prop] === value) {
         return i;
@@ -28,6 +29,7 @@ const Looper = () => {
 
     let array = [...toggle];
     const index = getIndex(beatName, array, "name");
+
     //if i found
     if (index !== -1) {
       if (playing === true) {
@@ -47,6 +49,7 @@ const Looper = () => {
     }
     console.log(array);
   };
+
   const handlePlayPauseClick = (e) => {
     e.preventDefault();
     const clicked = e.target.alt;
@@ -65,6 +68,7 @@ const Looper = () => {
       }
     }
   };
+
   return (
     <div>
       <Dropdown onSoundClick={handleDropdownClick} />

@@ -14,7 +14,11 @@ const App = () => {
 
   return (
     <div className="App">
-      {loading ? <BeatLoader loading={loading} size={120} /> : <Looper />}
+      {loading ? (
+        <BeatLoader loading={loading} color={"#c2c2c2"} size={120} />
+      ) : (
+        <Looper />
+      )}
     </div>
   );
 };

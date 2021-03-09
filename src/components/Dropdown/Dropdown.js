@@ -22,7 +22,7 @@ const Dropdown = (props) => {
   return (
     <div className="dropdown">
       <button onClick={dropDown} className="dropbtn">
-        <h2> Looper </h2>
+        <h1> Looper </h1>
       </button>
       <div id="dropDown" className="dropdown-content">
         {sounds.map((beat, i) => (

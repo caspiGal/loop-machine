@@ -4,27 +4,28 @@
 }
 
 .dropbtn {
+    text-align: center;
     display: inline-block;
     width: 330px;
-    height: 60px;
-    background: #9b9a9a;
-    margin-top: 35px;
-    border-radius: 50px;
-    transition: all 0.5s ease-in-out;
-    -webkit-animation: dropbtn 1.7s both;
-    animation: dropbtn 1.7s both;
+    height: 55px;
+    background: #c2c2c2;
+    margin-top: 20px;
+    border-radius: 20px;
+    transition: all 0.6s ease-in-out;
+    -webkit-animation: dropbtn 1.9s both;
+    animation: dropbtn 1.9s both;
 }
 
 .dropdown-content {
     display: none;
-    margin: 7px;
-    background: #9b9a9a;
+    margin: 5px;
+    background: #c2c2c2;
     border-radius: 50px;
     text-align: center;
-    grid-template-columns: 4fr 4fr 4fr;
-    grid-template-rows: 4fr 4fr 4fr;
-    -webkit-animation: dropdown-content 1s cubic-bezier(0.23, 1, 0.32, 1) both;
-    animation: dropdown-content 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    -webkit-animation: dropdown-content 1.2s cubic-bezier(0.23, 1, 0.32, 1) both;
+    animation: dropdown-content 1.2s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 .sound0,
@@ -37,8 +38,8 @@
 .sound7,
 .sound8,
 .sound9 {
-    background: #d0ac72;
-    border-radius: 50px;
+    background: #d4ba90;
+    border-radius: 55px;
 }
 
 .show {
@@ -48,11 +49,10 @@
 .switch {
     position: relative;
     display: inline-block;
-    margin: auto;
     margin-bottom: 15px;
-    width: 60px;
+    width: 50px;
     height: 34px;
-    animation: switch 0.5s ease-out both;
+    animation: switch 0.4s ease-out both;
 }
 
 .slider {
@@ -64,7 +64,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 40%;
+    border-radius: 50%;
     background-color: rgb(131, 131, 131);
     -webkit-transition: 0.5s;
     transition: 0.5s;
