@@ -1,16 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+
 body {
-    text-align: center;
-    margin-top: 0;
-    padding: 0;
-    background-image: url("../assets/appBackground.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  text-align: center;
+  background-size: cover;
+  -webkit-animation: bodyBackground 4s linear infinite alternate both;
+  animation: bodyBackground 4s linear infinite alternate both;
+  color: rgb(0, 0, 0);
 }
 
 h1,
-h2,
 p {
-    font-size: 24px;
-    font-family: "Akaya Telivigala";
-    text-align: center;
+  font-size: 25px;
+  font-family: "Poppins";
+}
+
+@keyframes bodyBackground {
+  0% {
+    background: #caaf54;
+  }
+  100% {
+    background: #fda085;
+  }
 }
