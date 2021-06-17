@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Looper from "./components/Looper";
-import BeatLoader from "react-spinners/BeatLoader";
+import ClipLoader from "react-spinners/ClipLoader";
 import Header from "./components/Header";
 
 const App = () => {
@@ -10,14 +10,14 @@ const App = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 2000);
   }, []);
 
   return (
-    <div className="App">
-      <Header fluid />
+    <div>
+      <Header />
       {loading ? (
-        <BeatLoader loading={loading} color={"#c2c2c2"} size={100} />
+        <ClipLoader loading={loading} color={"black"} size={"250px"} />
       ) : (
         <Looper />
       )}
