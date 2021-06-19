@@ -1,7 +1,11 @@
+/*
+ * Looper component - to deal with the functionality of the looper
+ */
+
 import React, { useState } from "react";
 import "./Looper.css";
-import Dropdown from "./Dropdown/Dropdown";
-import PlayPause from "./PlayPause/PlayPause";
+import Pad from "../Pad/Pad";
+import PlayPause from "../PlayPause/PlayPause";
 
 const Looper = () => {
   //toggle is On or Off ...
@@ -19,7 +23,7 @@ const Looper = () => {
     return -1; //to handle the case where the value doesn't exist
   }
 
-  const handleDropdownClick = (beatName) => {
+  const handlePadClick = (beatName) => {
     const audioObj = {
       name: beatName,
       audio: new Audio(`songs/${beatName}.mp3`),
@@ -35,19 +39,16 @@ const Looper = () => {
       if (playing === true) {
         array[index].audio.pause();
       }
-      console.log(beatName + " is set to Off");
       array.splice(index, 1); //  removing or replacing existing elements
       setToggle(array);
     } else {
       // index is -1
-      console.log(beatName + " is set to On");
       array.push(audioObj);
       setToggle(array);
       if (playing) {
         audioObj.audio.play();
       }
     }
-    console.log(array);
   };
 
   const handlePlayPauseClick = (e) => {
@@ -71,8 +72,8 @@ const Looper = () => {
 
   return (
     <div>
-      <Dropdown onSoundClick={handleDropdownClick} />
       <PlayPause onClick={handlePlayPauseClick} />
+      <Pad handlePadClick={handlePadClick} />
     </div>
   );
 };
