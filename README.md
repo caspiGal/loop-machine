@@ -1,7 +1,7 @@
 ## Looper-Machine App
 
 
-Play --> [Click Here](https://loop-machine-app.herokuapp.com/).&copy;
+Play --> [Click Here](https://looper-app-machine.herokuapp.com/).&copy; 
 
 
 
