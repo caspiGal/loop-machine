@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import "./Looper.css";
 import Pad from "../Pad/Pad";
 import PlayPause from "../PlayPause/PlayPause";
+import Record from "../Record/Record";
 
 const Looper = () => {
   //toggle is On or Off ...
@@ -74,6 +75,7 @@ const Looper = () => {
     <div>
       <PlayPause onClick={handlePlayPauseClick} />
       <Pad handlePadClick={handlePadClick} />
+      <Record />
     </div>
   );
 };
